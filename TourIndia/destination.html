@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destination</title>
+    <style>
+        body {
+            background-image: url("assets/images/newback.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            display: grid;
+            min-height: 600px;
+            border-radius: 15cm;
+            background-color: rgba(0, 0, 0, 0.833);
+
+        }
+
+        .navi li {
+            background-color: black;
+            border-radius: 15px;
+            float: left;
+            overflow: auto;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+
+            text-decoration: none;
+            font-size: larger;
+
+        }
+
+        ul {
+            padding: 10 px;
+            text-decoration: none;
+        }
+
+        .navi li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navi li a:hover {
+            color: aqua;
+            padding: 10px 15px;
+        }
+
+        .abou {
+            position: relative;
+            top: -100px;
+            text-shadow: 0cqmin;
+            text-overflow: inherit;
+            text-size-adjust: auto;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        h1 {
+            padding-left: 30px;
+            margin: 10px;
+
+        }
+
+        .abou li {
+            font-size: large;
+        }
+
+        .form .input-wrapper {
+            color: var(--spanish-gray);
+            text-align: left;
+            margin: 10px;
+        }
+
+        .input-wrapper {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background-size: auto;
+            box-sizing: inherit;
+            box-shadow: inset;
+            background: var(--white);
+            padding: 10px 15px;
+            font-size: var(--fs-5);
+        }
+
+        header {
+            height: 50%;
+        }
+
+        .form {
+            margin-top: -20px;
+            padding: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+
+        #name {
+
+            border-radius: 5px;
+            border-color: black;
+            margin-left: 70px;
+            padding: 7px 40px;
+        }
+
+        #person {
+            border-radius: 5px;
+            border-color: black;
+
+            margin-left: 54px;
+            padding: 7px 40px;
+        }
+
+        #place {
+
+            border-radius: 5px;
+            border-color: black;
+
+            margin-left: 72px;
+
+            padding: 7px 40px;
+        }
+
+        #contact {
+            border-radius: 5px;
+            border-color: black;
+            margin-left: 22px;
+            padding: 7px 40px;
+        }
+
+        #email {
+
+            border-radius: 5px;
+            border-color: black;
+            margin-left: 66px;
+            padding: 7px 40px;
+        }
+
+        #acontact {
+            border-radius: 5px;
+            border-color: black;
+            margin-left: 4px;
+            padding: 7px 40px;
+        }
+
+        .btn {
+            margin: 30px;
+            width: 20%;
+            height: 10%;
+            --border-width: 1px;
+            font-weight: var(--fw-600);
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new.html">About</a></li>
+                <li><a href="index.html/#de">Destination</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="">Packages</a></li>
+            </ul>
+        </nav>
+        <div>
+    </header>
+    <form action='book.php' method="post" class="form">
+        <div class="input-wrapper">
+            <label for="name" class="input-label">Name :</label>
+
+            <input type="text" name="name" id="name" required class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <label for="person" class="input-label">Persons :</label>
+
+            <input type="text" name="person" id="person" required class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <label for="place" class="input-label">Place :</label>
+            <select id="place">
+                <option value="" selected>Choose one </option>
+                <option value="">GOA</option>
+                <option value="">VIZAG</option>
+                <option value="">MUSSOORIE</option>
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <label for="contact" class="input-label">Contact no. :</label>
+
+            <input type="text" name="conatct" id="contact" required class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <label for="email" class="input-label">Email :</label>
+
+            <input type="email" name="email" id="email" required class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <label for="acontact" class="input-label">Alt.contact no.:</label>
+
+            <input type="text" name="name" id="acontact" required class="input-field">
+        </div>
+        <button type="submit" form="form 1" class="btn">BOOK NOW</button>
+
+
+
+
+
+
+    </form>
+
+    </div>
+
+</body>
+
+</html>
